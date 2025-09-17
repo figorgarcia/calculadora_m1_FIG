@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={{fontSize:40}}>Meu Contador: {contador}</Text>
+      <Text style={{fontSize:40}}>Olá!: {contador}</Text>
         <TouchableOpacity onPress={incrementarOContador} style={styles.botaoVermelho}>
           <Text style={{color:'white'}}>Incrementar</Text>
         </TouchableOpacity>
