@@ -23,4 +23,5 @@ export const styles = StyleSheet.create({
     borderRadius: 20,
     marginLeft: 10
   }
+  
 });
