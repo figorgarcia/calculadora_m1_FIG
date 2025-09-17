@@ -4,12 +4,23 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'lightblue',
   },
-  botaoVermelho:{
-    backgroundColor: 'red', 
-    padding: 10, 
-    borderRadius:10
+  telaDeResultado: {
+    backgroundColor: 'white',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+  },
+  containerNumeral: {
+    flexDirection: 'row',
+    marginTop: 20
+  },
+  botaoNumeral: {
+    backgroundColor:'lightgray',
+    padding: 20,
+    borderRadius: 20,
+    marginLeft: 10
   }
 });

@@ -4,25 +4,50 @@ import { styles } from './Styles';
 
 export default function App() {
 
-  const [contador, setContador] = useState(0);
-
-  function incrementarOContador(){
-    setContador(contador + 1);
-  }
-
-  function decrementarOContador(){
-    setContador(contador - 1);
-  }
 
   return (
     <View style={styles.container}>
-      <Text style={{fontSize:40}}>Mais um Commit!: {contador}</Text>
-        <TouchableOpacity onPress={incrementarOContador} style={styles.botaoVermelho}>
-          <Text style={{color:'white'}}>Incrementar</Text>
+      
+      <View style={styles.telaDeResultado}>
+        <Text style={{fontSize:80}}>1</Text>
+        <Text style={{fontSize:80}}>+</Text>
+        <Text style={{fontSize:80}}>2</Text>
+      </View>
+
+      <View style={styles.containerNumeral}>
+        <TouchableOpacity style={styles.botaoNumeral}>
+          <Text style={{fontSize:80}}>1</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={decrementarOContador} style={styles.botaoVermelho}>
-          <Text style={{color:'white'}}>Decrementar</Text>
+        <TouchableOpacity style={styles.botaoNumeral}>
+          <Text style={{fontSize:80}}>2</Text>
         </TouchableOpacity>
+        <TouchableOpacity style={styles.botaoNumeral}>
+          <Text style={{fontSize:80}}>3</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.containerNumeral}>
+        <TouchableOpacity style={styles.botaoNumeral}>
+          <Text style={{fontSize:80}}>+</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.botaoNumeral}>
+          <Text style={{fontSize:80}}>-</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.botaoNumeral}>
+          <Text style={{fontSize:80}}>/</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.containerNumeral}>
+        <TouchableOpacity style={styles.botaoNumeral}>
+          <Text style={{fontSize:80}}>=</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.botaoNumeral}>
+          <Text style={{fontSize:80}}>C</Text>
+        </TouchableOpacity>
+      </View>
+
+
     </View>
   );
 }
